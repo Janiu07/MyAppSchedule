@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Schedule</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(bgSched.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(bgSched1.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 1vh;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+            color: #362222c1;
+            margin-bottom: 1vh;
+            font-size: 2vw;
+            font-weight: 1000;
+            background-color: #e0e0e022;
+            opacity: 100%;
+            border-radius: 25px;
+        }
+
+        table {
+            width: 100%;
+            height: 100%;
+            border-collapse:separate;
+            font-size: 1vw;
+        }
+
+        th, td {
+            border: 1px solid #000000;
+            padding: 0.5vh;
+            text-align: center;
+            font-size:10px;
+            font-weight: bold;
+            background-color: #3c3d37bf;
+            opacity: 100%;
+            font-weight: bold;
+            color: #E0E0E0;
+        }
+
+        th {
+            background-color: #362222c1;
+            color: #E0E0E0;
+            font-size: 15px;
+            padding: 10px;
+            opacity: 100%;
+        }
+
+        td:empty {
+            background-color: #E0E0E0;
+            opacity: 30%;
+        }
+
+        .class-code {
+        font-size: 10px;
+        font-weight: bold;
+        color: #1a1a1dc0;
+        margin-right: 5px;
+        margin-bottom: 2px; /* Add spacing below class code */
+        display: block; 
+        font-style: italic;
+        }
+
+        /* Subject-specific colors */
+        .information-security {
+            background-color: #a59d84af;
+            font-weight: bold;
+            font-size: 10px;
+            opacity: 100%;
+            color:#1A1A1D;
+    
+        }
+
+        .systems-integration {
+            background-color: #ace1aeb1;
+            font-weight: bold;
+            font-size: 10px;
+            opacity: 100%;
+             color:#1A1A1D;
+        }
+
+        .systems-administration {
+            background-color: #b4b4b8c5;
+            font-weight: bold;
+            font-size: 10px;
+            opacity: 100%;
+            color:#1A1A1D;
+        }
+
+        .capstone-project {
+            background-color: #e2e0c8c7;
+            font-weight: bold;
+            font-size: 10px;
+            opacity: 100%;
+             color:#1A1A1D;
+        }
+
+        .web-systems {
+            background-color: #ab886dc1;
+            font-weight: bold;
+            font-size: 10px;
+            opacity: 100%;
+            color:#1A1A1D;
+        }
+
+        .event-driven {
+            background-color: #a5b68dcc;
+            font-weight: bold;
+            font-size: 10px;
+            opacity: 100%;
+            color:#1A1A1D;
+        }
+
+        .social-issues {
+            background-color: #d4a5a5c5;
+            font-weight: bold;
+            font-size: 10px;
+            opacity: 100%;
+            color: #1A1A1D;
+        }
+
+        @media (max-width: 768px) {
+            table {
+                font-size: 1.5vw;
+            }
+
+            th, td {
+                padding: 1vw;
+            }
+
+            h1 {
+                font-size: 4vw;
+            }
+        }
+
+        @media (max-width: 480px) {
+            table {
+                font-size: 2.5vw;
+            }
+
+            th, td {
+                padding: 1.5vw;
+            }
+
+            h1 {
+                font-size: 5vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Class Schedule</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>7:00 AM - 8:00 AM</td>
+                    <td class="information-security" rowspan="3"><span class="class-code">ITCC0823</span> Information Assurance and Security 2</td>
+                    <td class="systems-integration" rowspan="3"><span class="class-code">ITCC0923</span> Systems Integration and Architecture 1</td>
+                    <td class="systems-administration" rowspan="3"><span class="class-code">ITCC1223</span> Systems Administration and Maintenance</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8:00 AM - 9:00 AM</td>
+                    <td></td>
+                    <td></td>
+                    <td class="event-driven" rowspan="2"><span class="class-code">ITCC1123</span> Event Driven Programming</td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>9:00 AM - 10:00 AM</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10:00 AM - 11:00 AM</td>
+                    <td class="systems-integration" rowspan="2"><span class="class-code">ITCC0923</span> Systems Integration and Architecture 1</td>
+                    <td></td>
+                    <td class="capstone-project" rowspan="2"><span class="class-code">ITCC1323</span> Capstone Project and Research 1</td>
+                    <td></td>
+                    <td class="information-security" rowspan="2"><span class="class-code">ITCC0823</span> Information Assurance and Security 2</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>11:00 AM - 12:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>12:00 PM - 1:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>1:00 PM - 2:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2:00 PM - 3:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="social-issues" rowspan="3"><span class="class-code">ICSC0703</span> Social Issues and Professional Practice</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3:00 PM - 4:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4:00 PM - 5:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5:00 PM - 6:00 PM</td>
+                    <td class="systems-administration" rowspan="2"><span class="class-code">ITCC1223</span> Systems Administration and Maintenance</td>
+                    <td class="web-systems" rowspan="3"><span class="class-code">ITCC1023</span> Web Systems and Technologies 1</td>
+                    <td class="web-systems" rowspan="2"><span class="class-code">ITCC1023</span> Web Systems and Technologies 1</td>
+                    <td class="capstone-project" rowspan="3"><span class="class-code">ITCC1323</span> Capstone Project and Research 1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6:00 PM - 7:00 PM</td>
+                    <td class="event-driven" rowspan="3"><span class="class-code">ITCC1123</span> Event Driven Programming</td>
+                      <td></td>
+                </tr>
+                <tr>
+                    <td>7:00 PM - 8:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8:00 PM - 9:00 PM</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

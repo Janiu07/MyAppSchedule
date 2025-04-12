@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+th {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Empty cells remain white */
+td:empty {
+    background-color: white;
+}
+
+/* Day-specific colors */
+.monday {
+    background-color: #FFDDC1; /* Light orange for Monday */
+}
+
+.tuesday {
+    background-color: #C1E1FF; /* Light blue for Tuesday */
+}
+
+.wednesday {
+    background-color: #C1FFC1; /* Light green for Wednesday */
+}
+
+.thursday {
+    background-color: #FFB3B3; /* Light red for Thursday */
+}
+
+.friday {
+    background-color: #D1C1FF; /* Light purple for Friday */
+}
+
+.saturday {
+    background-color: #FFFFC1; /* Light yellow for Saturday */
+}
+
+td:hover {
+    background-color: #FFC107; /* Highlight on hover */
+    color: white;
+    cursor: pointer;
+}
